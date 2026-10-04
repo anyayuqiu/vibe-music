@@ -1,0 +1,28 @@
+<script setup lang="ts">
+import Header from './components/header/index.vue'
+import Aside from './components/aside/index.vue'
+import Main from './components/main/index.vue'
+import Footer from './components/footer/index.vue'
+// import BG from './components/bg/index.vue'
+import AgentChat from '@/components/Agent/AgentChat.vue'
+import { AudioPlayer } from '@/hooks/useAudioPlayer'
+
+provide('audioPlayer', AudioPlayer())
+</script>
+<template>
+  <!-- <BG /> -->
+  <SplashScreen />
+  <div class="absolute w-full flex flex-col h-full">
+    <div class="w-full flex flex-col h-full overflow-hidden bg-background">
+      <div class="px-4 py-2 text-center text-sm bg-[#ecf5ff] text-[#337ecc]">本站仅展示音乐资料与封面，不提供播放或下载服务。</div>
+      <Header />
+      <div class="flex flex-1 overflow-hidden">
+        <Aside />
+        <Main />
+      </div>
+      <Footer />
+    </div>
+    <!-- 全局悬浮的 VibeAgent 聊天窗 -->
+    <AgentChat />
+  </div>
+</template>

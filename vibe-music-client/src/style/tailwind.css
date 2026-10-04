@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* 与管理端默认浅色主题一致 */
+    --theme-bg-color: 220 23% 96% / 100%;
+    --dm-background: 220 23% 96% / 96%;
+
+    --background: 220 23% 96%;
+    --foreground: 220 13% 18%;
+
+    --muted: 220 20% 93%;
+    --muted-foreground: 220 5% 40%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 18%;
+
+    --card: #ffffff;
+    --card-foreground: 220 13% 18%;
+
+    --border: 220 14% 89%;
+    --input: 220 20% 95%;
+
+    --inactive: 220 5% 40%;
+
+    --heroui-default: 220 14% 89%;
+    --bg-content1: 0 0% 100%;
+
+    --hover-menu-bg: 220, 20%, 93%, 80%;
+    --active-menu-bg: 210, 100%, 62%, 13%;
+
+    --primary: #409eff;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 20% 93%;
+    --secondary-foreground: 220 13% 18%;
+
+    --accent: 210 100% 96%;
+    --accent-foreground: 210 85% 40%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --ring: 210 100% 62%;
+
+    --radius: 0.625rem;
+  }
+
+  .dark {
+    --theme-bg-color: 222 25% 8% / 100%;
+    --dm-background: 222 25% 8% / 95%;
+
+    --background: 222 25% 8%;
+    --foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --popover: 222.2 47.4% 11.2%;
+    --popover-foreground: 210 40% 98%;
+
+    --inactive: 227 12% 50% / 78%;
+
+    --heroui-default: 240 5.26% 26.08%;
+    --bg-content1: 240 5.88% 10%;
+
+    --hover-menu-bg: 222, 36%, 80%, 30%;
+    --active-menu-bg: 210, 100%, 62%, 25%;
+
+    --card: rgb(146 151 179 / 13%);
+    --card-foreground: 210 40% 98%;
+
+    --border: 227 12% 50% / 25%;
+    --input: 217.2 32.6% 17.5%;
+
+    --primary: #409eff;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --accent: 222 25% 18%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 210 100% 62%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

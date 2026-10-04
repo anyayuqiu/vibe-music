@@ -1,0 +1,17 @@
+.idea
+others
+
+### Test ###
+**/src/test
+*.drawio
+.zcode
+
+# Local deployment outputs and data
+/server-upload/
+/server-upload.zip
+/minio/
+/music-data/
+*.sql.bak
+vibe_music_backup.sql
+**/.env.private
+**/application-prod.yml
